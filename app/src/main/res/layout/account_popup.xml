@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ownimage"
+            android:layout_width="100dp"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            android:layout_height="100dp"
+            android:transitionName="accountPhoto"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/ownName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#474747"
+            android:text="Name"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/comfortaa_bold"/>
+        <TextView
+            android:id="@+id/ownEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="#000000"
+            android:text="email"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/comfortaa_bold"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logout"
+            android:elevation="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+</RelativeLayout>
